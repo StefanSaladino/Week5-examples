@@ -1,0 +1,113 @@
+/* General Styles & Reset */
+
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Typography */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 5rem; 
+    color: #fff; 
+    text-align:center; 
+    position: relative; 
+    top: 35%; 
+}
+
+article p {
+    width: 25ch; 
+}
+
+
+/* Layout  & Appearance  */
+
+main {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+div.flex {
+    justify-content: space-between;
+
+}
+
+article {
+    margin-bottom: 25px;
+}
+
+
+/* Backgrounds & Images */
+
+/* PART ONE -  Working with Background and Background Images */ 
+
+header {
+    height: 50vh;
+    /*background-color*/ 
+    background-color: #070805;
+    /*gradients*/ 
+    background-image: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    /* background-image*/ 
+    background-image: url('assets/pexels-sanketh-rao-716107.jpg');
+    /* controlling background repeat */ 
+    background-repeat: no-repeat;
+    /* controlling background-size */ 
+    background-size: cover;
+    /* position the background image */ 
+    background-position: center;
+    /* background-attachment */ 
+    background-attachment: fixed;
+    /*background shorthand */ 
+    background: url('assets/pexels-sanketh-rao-716107.jpg') no-repeat center/cover fixed;
+}
+
+
+.photo-container {
+    width: 200px; 
+    height: 150px 
+}
+
+.photo-container img {
+    max-width: 100%;
+    height:auto;
+}
+
+
+/*PART TWO - MANIPULATING IMAGES WITH CSS */
+
+.flex:nth-of-type(1) article:nth-of-type(2) img:hover {
+    filter: drop-shadow(16px 16px 20px black);
+    filter: grayscale(50%);
+    filter: invert(75%);
+    filter:opacity(75%);
+    filter: saturate(30%);
+    filter: sepia(100%);
+    filter: contrast(200%);
+    filter: brightness(5);
+    filter: blur(200px);
+    
+}
+
+
+/*Try It Out - apply filters to another image featured on the page */ 
